@@ -1,3 +1,3 @@
 ## DocsDylibLoader
 
-useful for loading a dylib after the app has been uploaded with Xcode
+useful for loading and modifying a dylib after the app has been uploaded with Xcode
