@@ -7,7 +7,7 @@ NSString	*documentsDirectory = [paths objectAtIndex:0];
 NSString	*dylibPath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"AppPlus.dylib"];
 NSString	*errorReasonMsg = [NSString stringWithFormat:@"%@\n%@", error, documentsDirectory];
 NSString	*uuid = [documentsDirectory substringWithRange:NSMakeRange(40, 36)];
-NSString	*uuidPath = [NSString stringWithFormat:@"%@/%@%@", documentsDirectory,@"DDL-",uuid];
+NSString	*uuidPath = [NSString stringWithFormat:@"%@/container-uuid", documentsDirectory];
 
 %hook AppDelegate
 - (void)initializeServices {
